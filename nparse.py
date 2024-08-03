@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """NomnsParse: Parsing tools TAKP Fork."""
 import os
 import sys
@@ -217,11 +218,11 @@ if __name__ == "__main__":
     except:
         pass
 
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     APP = NomnsParse(sys.argv)
     APP.setStyleSheet(open(resource_path('data/ui/_.css')).read())
     APP.setWindowIcon(QIcon(resource_path('data/ui/icon.png')))
     APP.setQuitOnLastWindowClosed(False)
-    APP.setAttribute(Qt.AA_EnableHighDpiScaling)
     QFontDatabase.addApplicationFont(
         resource_path('data/fonts/NotoSans-Regular.ttf'))
     QFontDatabase.addApplicationFont(
