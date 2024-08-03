@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """NomnsParse: Parsing tools TAKP Fork."""
 import os
 import sys
